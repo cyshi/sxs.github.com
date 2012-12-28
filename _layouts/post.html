@@ -5,7 +5,7 @@
 		<title>{{ page.title }} - My Diary</title>
 		<link rel="stylesheet" type="text/css" href="/css/style.css" />
 		<link rel="stylesheet" type="text/css" href="/css/syntax.css" />
-		<link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.feedburner.com/lzyy">
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.feedburner.com/sxs">
 		<script type="text/javascript">
 		  var _gaq = _gaq || [];
 		  _gaq.push(['_setAccount', 'UA-37283594-1']);
@@ -25,7 +25,7 @@
 			<h1><a href="/">My Diary</a></h1></div>
 		<div id="wrapper">
 			<div id="content">
-				<a target="_blank" style="float:right;margin-top:15px" href="http://twitter.com/share?url=http://blog.leezhong.com{{ page.url }}&via=lzyy&text={{ page.title }}"><span class="balloon">retweet</span></a>
+				<a target="_blank" style="float:right;margin-top:15px" href="http://twitter.com/share?url=http://blog.leezhong.com{{ page.url }}&via=sxs&text={{ page.title }}"><span class="balloon">retweet</span></a>
 				<h2>{{ page.title }}</h2>
 				<div class="cnt">
 					{{ content }}
@@ -40,29 +40,29 @@
 				    */
 				  (function() {
 				   var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-				   dsq.src = 'http://lzyyblog.disqus.com/embed.js';
+				   dsq.src = 'http://sxsblog.disqus.com/embed.js';
 				   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 				  })();
 				</script>
-				<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=lzyyblog">comments powered by Disqus.</a></noscript>
+				<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=sxsblog">comments powered by Disqus.</a></noscript>
 			</div>
 
 				<div id="footer">
 					<div id="feed">
 						<div class="badget" id="github">
-							<a href="http://github.com/lzyy">
+							<a href="http://github.com/sxs">
 							<span class="service">github</span>
 							<span class="info"> </span>
 							</a>
 						</div>
 						<div class="badget" id="twt">
-							<a href="http://twitter.com/lzyy">
+							<a href="http://twitter.com/sxs">
 							<span class="service">twitter</span>
 							<span class="info">700+</span>
 							</a>
 						</div>
 						<div class="badget" id="feedburner">
-							<a href="http://feeds.feedburner.com/lzyy">
+							<a href="http://feeds.feedburner.com/sxs">
 							<span class="service">rss</span>
 							<span class="info">900+</span>
 							</a>
@@ -110,7 +110,7 @@
 
 if(!$.cookie('badget-github'))
 {
-	url = 'https://api.github.com/legacy/user/search/lzyy';
+	url = 'https://api.github.com/legacy/user/search/sxs';
 	$.getJSON(url+"?callback=?", function(data){
 		//var text = data['users'][0]['public_repo_count'] + ' / ' + data['user']['followers_count'];
 		var text = data['data']['users'][0]['followers_count'];
