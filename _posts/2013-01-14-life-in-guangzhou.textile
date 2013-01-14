@@ -1,0 +1,9 @@
+---
+layout: post
+title: 广州的生活
+category: life
+---
+
+h1. 关于新公司
+
+h1. 
