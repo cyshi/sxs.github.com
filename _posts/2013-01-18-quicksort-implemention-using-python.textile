@@ -1,0 +1,16 @@
+---
+layout: post
+title: 使用python实现quick sort时的错误总结 
+category: tech
+---
+
+h4. 语言细节
+
+* python 中的for循环使用 range 函数进行控制，但是 range(1,2)产生的列表时 [1]
+* python 的递归深度有限，据传900左右，因此尽量不用使用递归
+
+h4. 关于quick sort
+
+* 非递归实现：使用 python 提供的 list 作为堆栈，将每次划分产生的头、尾与枢纽做比较后，存入堆栈即可。
+* quick sort 在面对数据量大，且重复数据多的情况时，退化严重。例如 100w 在 (0, 100) 之间的数。 
+
