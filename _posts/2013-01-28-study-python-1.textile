@@ -18,5 +18,3 @@ typdef struct _object {
 
 {% endhighlight %}
 
-p. 
-
