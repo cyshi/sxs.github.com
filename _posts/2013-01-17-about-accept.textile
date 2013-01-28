@@ -1,0 +1,14 @@
+---
+layout: post 
+title: 关于accept函数的invalid argument错误 
+category: tech
+---
+
+p. accept函数原型
+
+@int accept(int sockfd, struct sockaddr *addr, socklen_t *addrlen);@
+
+p. 导致Invalid Argument函数的原因一般是由于：
+
+* 第一个参数出错，accept之前没有调用listen，或者bind
+* 第三个参数出错，addrlen没有被正确的初始化
