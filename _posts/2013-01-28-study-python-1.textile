@@ -4,5 +4,11 @@ title: python
 category: tech 
 ---
 
-h3. python 对象机制 
+h3. 一、python 对象机制 
+
+{% highlight php %}
+
+python test
+
+{% endhighlight %}
 
