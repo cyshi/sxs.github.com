@@ -6,9 +6,16 @@ category: tech
 
 h3. 一、python 对象机制 
 
-{% highlight php %}
+p. python 中一切皆对象（类似 JavaScript），所有对象皆继承自 PyObject。
 
-python test
+* [object.h] *
+{% highlight nf %}
+
+typdef struct _object {
+  PyObject_HEAD;
+} PyObject;
 
 {% endhighlight %}
+
+p. 
 
