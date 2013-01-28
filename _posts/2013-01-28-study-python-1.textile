@@ -1,0 +1,17 @@
+---
+layout: post
+title: python 学习（一）
+category: tech 
+---
+
+h3. python 对象机制
+
+python 中一切皆对象（类似JavaScript）。
+
+p. 所有对象继承自 PyObject [object.h]。
+
+@ 
+  typedef struct _object {
+     PyObject_HEAD
+  } PyObject;
+@
