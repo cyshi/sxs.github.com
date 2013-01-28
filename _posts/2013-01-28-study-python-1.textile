@@ -8,7 +8,8 @@ h3. 一、python 对象机制
 
 p. python 中一切皆对象（类似 JavaScript），所有对象皆继承自 PyObject。
 
-* [object.h] *
+*[object.h]*
+
 {% highlight nf %}
 
 typdef struct _object {
