@@ -1,6 +1,6 @@
 ---
 layout: post
-title: python 
+title: python 学习（一）
 category: tech 
 ---
 
