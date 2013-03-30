@@ -1,8 +1,11 @@
 <html>
   <script>
-    alert("welcome to work test page...");
+    function devil() {
+      document.getElementById('evil').innerHTML = "Devil comes in..."
+    }
+    setInterval(devil, 3000);
   </script>
   <body>
-    <h1>Hello Evil...</h1>
+    <h1 id="evil">Hello Evil...</h1>
   </body>
 </html>
