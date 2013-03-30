@@ -1,7 +1,8 @@
 <html>
   <script>
     function devil() {
-      document.getElementById('evil').innerHTML = "Devil comes in... Time:" + new Date().getTime();
+      while (1)
+        document.getElementById('evil').innerHTML = "Devil comes in... Time:" + new Date().getTime();
     }
     setInterval(devil, 3000);
   </script>
